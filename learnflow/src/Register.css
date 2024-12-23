@@ -1,0 +1,176 @@
+/* Register.css */
+
+/* Main page container */
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container covers the viewport height */
+    background: linear-gradient(135deg, #6c8dff, #64b5f6); /* Gradient background */
+    margin: 0;
+    padding: 20px; /* Padding for better visibility on small screens */
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    overflow-y: auto; /* Allow scrolling for extra content */
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Heading styling */
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Space between header and form */
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: slideIn 1s ease-out;
+    text-align: center; /* Center align the header */
+  }
+  
+  /* Form container */
+  form {
+    width: 100%;
+    max-width: 380px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    color: #333;
+    animation: fadeInUp 1.2s ease-in-out;
+    margin-bottom: 20px; /* Provide space below the form for better alignment */
+  }
+  
+  /* Form elements styling */
+  label {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    display: block;
+    color: #333;
+    font-weight: 600;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #3f51b5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ff4081;
+    transform: translateY(-3px);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
+  
+  /* Navigation links styling */
+  .navigation-link {
+    margin-top: 20px;
+    text-align: center; /* Center align links */
+  }
+  
+  .navigation-link a {
+    color: #3f51b5;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+  }
+  
+  .navigation-link a:hover {
+    color: #ff4081;
+  }
+  
+  /* Form input focus effect */
+  input:focus,
+  select:focus {
+    border-color: #ff4081;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 64, 129, 0.5);
+  }
+  
+  select {
+    height: 40px;
+    font-size: 1.1rem;
+  }
+  
+  /* Media Query for Small Screens */
+  @media (max-width: 768px) {
+    .register-page {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+  
+    form {
+      padding: 15px;
+    }
+  
+    button {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Keyframe animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
